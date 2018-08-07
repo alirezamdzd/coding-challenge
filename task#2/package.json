@@ -1,0 +1,14 @@
+{
+  "name": "simple-registration-app",
+  "version": "1.0.0",
+  "description": "A simple user registration express application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KOS",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

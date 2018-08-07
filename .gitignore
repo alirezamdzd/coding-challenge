@@ -1,0 +1,30 @@
+## Intellij
+.idea/*
+.idea/*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/codeStyleSettings.xml
+.idea/watcherTasks.xml
+.idea/libraries/Generated_files.xml
+.idea/runConfigurations/app_js.xml
+*.iml
+
+## Logs
+logs/*.log
+
+## OS X
+.DS_Store
+
+## Others
+node_modules/
+*/node_modules/
+*.log
+*unit.xml
+.project
+buildInfo.json
+*npm-debug*
+waiting.lock
+
+## Duplicated Code Result
+duplicade_finds.xml
+.idea/
