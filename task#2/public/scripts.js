@@ -15,8 +15,8 @@ $(document).ready(function() {
           alert("Form Updated Successfully !!!");
           $("#form")[0].reset();
         }
-      ).fail(function() {
-        alert("Form Update Failed !!!");
+      ).fail(function(error) {
+        alert("Form Update Failed !!!" + error);
       });
     }
   });

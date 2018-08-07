@@ -16,6 +16,8 @@ mongoose
 //create an express app
 const app = express();
 
+app.use(express.static("public"));
+
 // set up the template engine
 app.set("views", "./views");
 app.set("view engine", "pug");
