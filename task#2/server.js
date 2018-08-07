@@ -16,8 +16,20 @@ mongoose
 //create an express app
 const app = express();
 
+// set up the template engine
+app.set("views", "./views");
+app.set("view engine", "pug");
+
+// GET response for '/'
 app.get("/", function(req, res) {
-  res.send("Hello World");
+  // render the 'index' template, and pass in a few variables
+  res.render("index", { title: "Hey", message: "Hello there!" });
+});
+
+// GET response for '/'
+app.get("/register", function(req, res) {
+  // render the 'index' template, and pass in a few variables
+  res.render("register");
 });
 
 //create body parser middleware

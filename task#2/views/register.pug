@@ -2,7 +2,7 @@ extends layout
 
 block content
   .jumbotron
-    form(method='POST', action='/register')
+    form#form(method='POST',action="/user/register")
       .form-group
         label(for='name') Name
         input#name.form-control(type='text', placeholder='Enter Name')
@@ -10,4 +10,5 @@ block content
         label(for='email') Email address
         input#email.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
         small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
-      button.btn.btn-primary(type='submit') Submit
+      button#btn.btn.btn-primary(type='submit') Submit
+      
