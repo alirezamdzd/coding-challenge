@@ -1,0 +1,122 @@
+/* Font update */
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Dimensions for header */
+.main {
+  height: 80px;
+  width: 100%;
+}
+
+/* Classes for images */
+.cart-icon {
+  background: url("../images/cart.svg");
+}
+
+.logo {
+  background: url("../images/logo.svg");
+}
+
+.searchbutton-icon {
+  background: url("../images/searchButton.svg");
+}
+
+.useraccount-icon {
+  background: url("../images/userAcount.svg");
+}
+
+.wishlist-icon {
+  background: url("../images/wishlist.svg");
+}
+
+/* Common background image setting */
+.common-image-setting {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Styling for logo */
+.logo-size {
+  width: 80px;
+  height: 70px;
+}
+
+/* Layout styling */
+.standard-centered-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container,
+.right-container {
+  width: 45%;
+}
+
+.middle-container {
+  width: 10%;
+}
+
+/* info list styling */
+.stores,
+.newsLetter,
+.contact {
+  color: gray;
+  font-size: 12px;
+}
+
+.info-icon-setting:before {
+  margin: 0px 12px;
+}
+
+.stores:before {
+  content: url("../images/stores.svg");
+}
+
+.newsLetter:before {
+  content: url("../images/newsletter.svg");
+}
+
+.contact:before {
+  content: url("../images/contact.svg");
+}
+
+/* Right side container */
+.user-account,
+.wish-list,
+.cart {
+  color: gray;
+}
+
+.account-setting-common {
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.account-setting-common:before {
+  margin: 0px 12px;
+}
+
+.user-account:before {
+  content: url("../images/userAcount.svg");
+}
+
+.wish-list:before {
+  content: url("../images/wishlist.svg");
+}
+
+.cart:before {
+  content: url("../images/cart.svg");
+}
+
+/* Mobile version of 720px. */
+@media (max-width: 720px) {
+  .stores,
+  .newsLetter,
+  .contact {
+    display: none;
+  }
+}
