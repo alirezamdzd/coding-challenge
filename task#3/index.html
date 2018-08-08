@@ -10,53 +10,63 @@
 </head>
 
 <body>
-    <nav class="banner">
+    <nav class="navbar">
 
-        <ul class="banner__contact">
-            <li class="banner__contact--item">
-                <img src="assets/images/stores.svg" alt="Mobelhauser">
-                <span class="banner__contact--term">Mobelhauser</span>
-            </li>
-            <li class="banner__contact--item">
-                <img src="assets/images/newsletter.svg" alt="newsletter">
-                <span class="banner__contact--term">Newsletter</span>
-            </li>
-            <li class="banner__contact--item">
-                <img src="assets/images/contact.svg" alt="contact">
-                <span class="banner__contact--term">contact</span>
-            </li>
-        </ul>
+        <!--leftside-box-->
+        <div class="navbar_left-control">
 
-        <li class="banner__search">
-            <input type="text" placeholder="Search..">
-            <button>
-                <img src="assets/images/searchButton.svg" alt="search">
-            </button>
-        </li>
-        <div class="banner__logo">
-            <img src="assets/images/logo.svg" alt="logo">
+            <!--contact-links-->
+            <ul class="navbar__links">
+                <li class="navbar__links--item">
+                    <img class="navbar__links--icon" src="assets/images/stores.svg" alt="stores"> Mobelhauser
+                </li>
+                <li class="navbar__links--item">
+                    <img class="navbar__links--icon" src="assets/images/newsletter.svg" alt="newsletter">Newsletter</li>
+                <li class="navbar__links--item">
+                    <img class="navbar__links--icon" src="assets/images/contact.svg" alt="contact">Kontakt</li>
+            </ul>
+
+            <!--searchbar-->
+            <div class="navbar__search">
+                <button class="navbar__search--button">
+                    <img class="navbar__search--icon" src="assets/images/searchButton.svg" alt="search">
+                </button>
+                <input type="text" class="navbar__search--input" placeholder="Suchen">
+            </div>
+
         </div>
-        <ul class="banner__shopping">
-            <li>
-                <img src="assets/images/userAcount.svg" alt="userAcount">
-                <span>Mein Knoto</span>
-                <span>Luisette Musterfrau</span>
-            </li>
-            <li>
-                <img src="assets/images/wishlist.svg" alt="wishlist">
-                <span>Wunschliste</span>
-                <span>0 Artikel</span>
-            </li>
-            <li>
-                <img src="assets/images/cart.svg" alt="wishlist">
-                <span>Warenkorth</span>
-                <span>0 Artikel</span>
-            </li>
-        </ul>
 
+        <!--logos-->
+        <div class="navbar__logo">
+            <img class="navbar__logo--icon" src="assets/images/logo.svg" alt="logo">
+        </div>
+
+        <!--shopping-links-->
+        <div class="navbar__shopping-links">
+            <li class="navbar__shopping-links--item">
+                <img src="assets/images/userAcount.svg" alt="userAcount" class="navbar__shopping--icon">
+                <span class="navbar__shopping--term-1">Mein Konto
+                    <br/>
+                    <span class="navbar__shopping--term-2">Luisette Musterfau</span>
+                </span>
+            </li>
+            <li class="navbar__shopping-links--item">
+                <img src="assets/images/wishlist.svg" alt="wishlist" class="navbar__wishlist--icon">
+                <span class="navbar__shopping--term-1">Wunschliste
+                    <br/>
+                    <span class="navbar__shopping--term-2">0 Artikel</span>
+                </span>
+            </li>
+            <li class="navbar__shopping-links--item">
+                <img src="assets/images/cart.svg" alt="Warenkorb" class="navbar__cart--icon">
+                <span class="navbar__shopping--term-1">Warenkorb
+                    <br/>
+                    <span class="navbar__shopping--term-2">0 Artikel</span>
+                </span>
+            </li>
+        </div>
 
     </nav>
-
 </body>
 
 </html>

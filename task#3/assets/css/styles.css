@@ -1,63 +1,120 @@
-/*Reset CSS */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
+/* Font update */
 html {
-  font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
 }
 
-body {
-  box-sizing: border-box;
-  position: relative;
-  background-color: white;
-}
-nav {
+/* Dimensions for header */
+.main {
+  height: 80px;
   width: 100%;
-  height: 82px;
-  background-color: white;
-  box-shadow: -8px 10px 13px -10px #000000;
 }
-.banner {
+
+/* Classes for images */
+.cart-icon {
+  background: url("../images/cart.svg");
+}
+
+.logo {
+  background: url("../images/logo.svg");
+}
+
+.searchbutton-icon {
+  background: url("../images/searchButton.svg");
+}
+
+.useraccount-icon {
+  background: url("../images/userAcount.svg");
+}
+
+.wishlist-icon {
+  background: url("../images/wishlist.svg");
+}
+
+/* Common background image setting */
+.common-image-setting {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Styling for logo */
+.logo-size {
+  width: 80px;
+  height: 70px;
+}
+
+/* Layout styling */
+.standard-centered-flex {
   display: flex;
   flex-direction: row;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.banner__contact {
-  position: absolute;
-  left: 8rem;
-  list-style: none;
   justify-content: center;
+  align-items: center;
 }
-.banner__contact--term {
-  margin-left: 12px;
+
+.left-container,
+.right-container {
+  width: 45%;
 }
-.banner__contact--term:nth-child(2) {
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.middle-container {
+  width: 10%;
 }
-.banner__contact--item:nth-child(2) {
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+/* info list styling */
+.stores,
+.newsLetter,
+.contact {
+  color: gray;
+  font-size: 12px;
 }
-.banner__logo {
-  list-style: none;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.info-icon-setting:before {
+  margin: 0px 12px;
 }
-.banner__shopping {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin-right: 8rem;
+
+.stores:before {
+  content: url("../images/stores.svg");
+}
+
+.newsLetter:before {
+  content: url("../images/newsletter.svg");
+}
+
+.contact:before {
+  content: url("../images/contact.svg");
+}
+
+/* Right side container */
+.user-account,
+.wish-list,
+.cart {
+  color: gray;
+}
+
+.account-setting-common {
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.account-setting-common:before {
+  margin: 0px 12px;
+}
+
+.user-account:before {
+  content: url("../images/userAcount.svg");
+}
+
+.wish-list:before {
+  content: url("../images/wishlist.svg");
+}
+
+.cart:before {
+  content: url("../images/cart.svg");
+}
+
+/* Mobile version of 720px. */
+@media (max-width: 720px) {
+  div {
+    color: yellow;
+  }
 }
