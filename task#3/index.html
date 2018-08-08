@@ -5,35 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <!-- Hoffner Header -->
-    <div class="main standard-centered-flex">
-        <!-- left of the logo -->
-        <div class="left-container standard-centered-flex">
-            <div class="info list">
-                <div class="stores info-icon-setting">MobelHauser</div>
-                <div class="newsLetter info-icon-setting">Newsletter</div>
-                <div class="contact info-icon-setting">Kontact</div>
-            </div>
-            <div class="search-container">
-                <input type="text" placeholder="Enter Search Text" />
-            </div>
+    <nav class="banner">
+
+        <ul class="banner__contact">
+            <li class="banner__contact--item">
+                <img src="assets/images/stores.svg" alt="Mobelhauser">
+                <span class="banner__contact--term">Mobelhauser</span>
+            </li>
+            <li class="banner__contact--item">
+                <img src="assets/images/newsletter.svg" alt="newsletter">
+                <span class="banner__contact--term">Newsletter</span>
+            </li>
+            <li class="banner__contact--item">
+                <img src="assets/images/contact.svg" alt="contact">
+                <span class="banner__contact--term">contact</span>
+            </li>
+        </ul>
+
+        <li class="banner__search">
+            <input type="text" placeholder="Search..">
+            <button>
+                <img src="assets/images/searchButton.svg" alt="search">
+            </button>
+        </li>
+        <div class="banner__logo">
+            <img src="assets/images/logo.svg" alt="logo">
         </div>
-        <!-- logo container -->
-        <div class="middle-container standard-centered-flex">
-            <div class="logo logo-size common-image-setting"></div>
-        </div>
-        <!-- right of the logo -->
-        <div class="right-container standard-centered-flex">
-            <div class="user-account account-setting-common">User Account</div>
-            <div class="wish-list account-setting-common">Wish List</div>
-            <div class="cart account-setting-common">Cart</div>
-        </div>
-    </div>
+        <ul class="banner__shopping">
+            <li>
+                <img src="assets/images/userAcount.svg" alt="userAcount">
+                <span>Mein Knoto</span>
+                <span>Luisette Musterfrau</span>
+            </li>
+            <li>
+                <img src="assets/images/wishlist.svg" alt="wishlist">
+                <span>Wunschliste</span>
+                <span>0 Artikel</span>
+            </li>
+            <li>
+                <img src="assets/images/cart.svg" alt="wishlist">
+                <span>Warenkorth</span>
+                <span>0 Artikel</span>
+            </li>
+        </ul>
+
+
+    </nav>
+
 </body>
 
 </html>
